@@ -1,0 +1,32 @@
+{
+  "name": "aa-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "bin": {
+    "aa-cli": "cli.js",
+    "lint": "eslint cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhahaSy/AA-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhahaSy/AA-cli/issues"
+  },
+  "homepage": "https://github.com/ZhahaSy/AA-cli#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "inquirer": "^8.2.4"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}
