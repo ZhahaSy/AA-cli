@@ -4,8 +4,7 @@
   "description": "",
   "main": "cli.js",
   "bin": {
-    "aa-cli": "cli.js",
-    "lint": "eslint cli.js"
+    "aa-cli": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +26,10 @@
     "inquirer": "^8.2.4"
   },
   "dependencies": {
-    "ejs": "^3.1.8"
+    "chalk": "^4.1.2",
+    "commander": "^9.3.0",
+    "ejs": "^3.1.8",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0"
   }
 }
