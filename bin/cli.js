@@ -4,15 +4,16 @@ const program = require('commander');
 const chalk = require('chalk');
 const figlet = require('figlet');
 
-const projectName = require('./package.json').name;
+const projectName = require('../package.json').name;
 
 
 program
   .command('create <app-name>')
   .description('create a new project')
+  .option('-d, --dev', 'develop mode')
   .option('-f, --force', 'overwrite target directory if it exist')
   .action((name, options) => {
-    require('./lib/create.js')(name, options);
+    require('../lib/create.js')(name, options);
   })
 
 // 配置config命令
@@ -23,7 +24,7 @@ program
   .option('-s, --set <path> <value>')
   .option('-d, --delete <path>', 'delete option from config')
   .action((value, options) => {
-    require('./lib/config.js')(value, options);
+    require('../lib/config.js')(value, options);
   })
 
 // 配置ui命令
@@ -32,7 +33,7 @@ program
   .description('start add open aa-cli ui')
   .option('-p, --port <port>', 'Port used for the UI Server')
   .action((option) => {
-    require('./lib/ui.js')(option)
+    require('../lib/ui.js')(option)
   })
 
 program
@@ -49,7 +50,7 @@ program
   })
 
 program
-  .version(`v${require('./package.json').version}`)
+  .version(`v${require('../package.json').version}`)
   .usage('<command> [option]')
 
 program.parse(process.argv);

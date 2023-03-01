@@ -4,7 +4,8 @@
   "description": "",
   "main": "cli.js",
   "bin": {
-    "aa-cli": "./bin/cli.js"
+    "aa-cli": "./bin/cli.js",
+    "aa": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,15 +21,18 @@
   },
   "homepage": "https://github.com/ZhahaSy/AA-cli#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.29.0",
-    "@typescript-eslint/parser": "^5.29.0",
     "eslint": "^8.18.0",
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "prettier": "^2.8.4"
   },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "ejs": "^3.1.8",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
     "figlet": "^1.5.2",
     "fs-extra": "^10.1.0"
   }
