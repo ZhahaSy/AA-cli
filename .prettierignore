@@ -1,0 +1,12 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+**/*.png
+scripts/*
+.DS_Store
+.gitkeep
+package.json
+src/libs
+node_modules
+dist
