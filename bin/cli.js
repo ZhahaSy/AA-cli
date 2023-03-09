@@ -13,6 +13,7 @@ program
   .option('-d, --dev', 'develop mode')
   .option('-f, --force', 'overwrite target directory if it exist')
   .action((name, options) => {
+    console.log(name, options);
     require('../lib/create.js')(name, options);
   })
 
