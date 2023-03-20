@@ -1,8 +1,8 @@
-<script setup <%_ if (hasTypeScript) { _%>
+<script setup <%_ if (useTs) { _%>
  lang="ts" <%_ } _%> >
 import { ref } from 'vue'
 
-<%_ if (hasTypeScript) { _%>
+<%_ if (useTs) { _%>
 defineProps<{ msg: string }>()
 <%_ } else { _%> 
 defineProps({

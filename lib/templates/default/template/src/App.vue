@@ -1,4 +1,4 @@
-<script setup <%_ if (hasTypeScript) { _%>
+<script setup <%_ if (useTs) { _%>
  lang="ts" <%_ } _%> ></script>
 
 <template>

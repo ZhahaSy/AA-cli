@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" <%_ if (hasTypeScript) { _%>
+    <script type="module" <%_ if (useTs) { _%>
  src="/src/main.ts" <%_ } else { _%>
  src="/src/main.js" <%_ } _%>></script>
     

@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ZhahaSy/AA-cli#readme",
   "devDependencies": {
     "eslint": "^8.18.0",
+    "globby": "^11.0.2",
     "inquirer": "^8.2.4",
     "prettier": "^2.8.4"
   },
@@ -35,6 +36,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "execa": "^5.1.1",
     "figlet": "^1.5.2",
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "isbinaryfile": "^4.0.10"
   }
 }
