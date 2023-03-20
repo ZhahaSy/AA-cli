@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="//static.hdslb.com/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>企业效率工程脚手架</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" <%_ if (useTs) { _%>
+ src="/src/main.ts" <%_ } else { _%>
+ src="/src/main.js" <%_ } _%>></script>
+    
+    <%_ if (useWatermark) { _%>
+    <script type="text/javascript" src="//src.bilibili.co/_/webwatermark"></script>
+    <%_ } _%>
+  </body>
+</html>

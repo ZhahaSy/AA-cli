@@ -1,0 +1,4 @@
+VITE_BASE_URL=/<% if (useMock) { %>
+// mock 开关: LOCAL REMOTE OFF
+VITE_MOCK=LOCAL
+<% } %>
